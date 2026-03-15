@@ -4,7 +4,7 @@
 
 header, .center, footer {
     min-height: 80px;
-    border: 2px solid blue;
+    border: 2px solid pink;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 
 
 .main_nav {
-    background-color: lightgray;
+    background-color: pink;
     min-height: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -45,7 +45,7 @@ main, aside {
 }
 
 main {
-    background-color: darkblue;
+    background-color: lightpink;
     flex: 4;
     color: white;
     padding: 5px 10px;
@@ -53,12 +53,12 @@ main {
 
 
 aside {
-    background-color: gray;
+    background-color: hotpink;
     flex: 1;
     padding: 5px;
     text-align: center;
 }
 
 footer {
-    background-color: orange;
+    background-color: palevioletred;
 }

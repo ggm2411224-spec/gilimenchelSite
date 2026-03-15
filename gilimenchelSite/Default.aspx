@@ -5,7 +5,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
-    תוכן דף ראשי
+    ברוכים הבאים לאתר סדרות הנוער, אתר המלצות לסרות הנוער של פעם .המקום למי שרוצה למצוא תוכן איכותי לא כבד ויודע שהקלאסיקות תמיד יותר טובות.
 </asp:Content>
 
 
