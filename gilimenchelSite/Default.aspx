@@ -4,8 +4,13 @@
 
 </asp:Content>
 
+<asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+ <img src="images/logo.png" alt="Teen Series" width="500" height="400" />
+</asp:Content>
+
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
+  
 <h1>ברוכים הבאים לאתר סדרות הנוער, אתר המלצות לסרות הנוער של פעם .המקום למי שרוצה למצוא תוכן איכותי לא כבד ויודע שהקלאסיקות תמיד יותר טובות</h1>
     <h2>באתר תמצאו שלל המלצות וביקורות לסדרות נוער משנת 2005-2015 של סדרות איכותיות עם </h2>
     <ul>
@@ -17,9 +22,12 @@
         <li>דירוג הסדרה בכוכבים לכל קטגוריה </li>
         <li>המלצה להגבלת גיל הסדרה</li>
         <li>ואיפה ניתן לצפות בה</li>
+        
 
     </ul>
+  
 </asp:Content>
+
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
