@@ -4,6 +4,8 @@
 
 <asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
  <img src="images/האי.jpg" alt="Teen Series" width="500" height="400" />
+   
+
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">

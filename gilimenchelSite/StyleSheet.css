@@ -4,7 +4,7 @@
 
 header, .center, footer {
     min-height: 80px;
-    border: 2px solid pink;
+    border: 1px ;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 
 
 .main_nav {
-    background-color: pink;
+    background-color: deeppink;
     min-height: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -36,27 +36,28 @@ header {
 
 
 .center {
-    background-color: lime;
+    background-color: pink;
     margin-bottom: 5px;
     display: flex;
 }
 
 main, aside {
-    min-height: 300px;
+    min-height: 400px;
+    background-color: pink;
 }
 
 main {
-    background-color: lightpink;
+    background-color: pink;
     flex: 4;
     color: white;
-    padding: 5px 10px;
+    padding: 3px 8px;
 }
 
 
 aside {
-    background-color: hotpink;
+    background-color: pink;
     flex: 1;
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -69,6 +70,6 @@ aside {
     }
 
 footer {
-    background-color: palevioletred;
+    background-color: lightpink;
     color: white;
 }

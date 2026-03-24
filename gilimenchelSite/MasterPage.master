@@ -15,10 +15,12 @@
             <section class="header_top">                
                 </section>
             
-            <nav class="main_nav">    
+            <nav class="main_nav"> 
+                
                 <a href="Default.aspx">דף בית</a>
                 <a href="אליפים.aspx">אליפים</a>
                 <a href="האי.aspx">האי</a>
+                <img src="images/logo.png" alt="Teen Series" width="140" height="90" />
             </nav>
         </header>
         
@@ -37,7 +39,6 @@
         </section>
             
         <footer>
-            <h3> כל הזכויות שמורות לאתר סדרות הנוער</h3>
         </footer>
     </form>
     

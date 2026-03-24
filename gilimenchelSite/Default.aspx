@@ -5,7 +5,10 @@
 </asp:Content>
 
 <asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
- <img src="images/logo.png" alt="Teen Series" width="500" height="400" />
+    <h3>מקורות שבהם ניתן למצוא סדרות נוער</h3>
+ <img src="images/hh.png" alt="Teen Series" width="300" height="200" />
+    <a href="https://t.me/king_of_telegram_b" target="_blank" style="font-weight: bold; color: #0088cc; text-decoration: none;">
+            לקבוצת הטלגרם שבה ניתן לצפות בסדרות - לחצו כאן</a>
 </asp:Content>
 
 
