@@ -10,9 +10,16 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
         <header>
-            <section class="header_top">                
+            		<section class="header_date">
+			<asp:Label ID="DateLabel" runat="server"></asp:Label>
+			<asp:Image ID="DayImage" runat="server"/>
+		</section>
+
+            <section class="header_top">  
+                    <img src="images/logo.png" alt="Teen Series" width="140" height="90" />
+</nav>
                 </section>
             
             <nav class="main_nav"> 
@@ -20,7 +27,11 @@
                 <a href="Default.aspx">דף בית</a>
                 <a href="אליפים.aspx">אליפים</a>
                 <a href="האי.aspx">האי</a>
-                <img src="images/logo.png" alt="Teen Series" width="140" height="90" />
+               <a href="החממה.aspx">החממה</a>
+                <a href="השמינייה.aspx">השמינייה</a>
+                <a href="גאליס.aspx">גאליס</a>
+                <a href="חצויה.aspx">חצויה</a>
+                                <a href="הילדים מגבעת נפוליון.aspx">הילדים מגבעת נפוליון</a>
             </nav>
         </header>
         
@@ -40,7 +51,6 @@
             
         <footer>
         </footer>
-    </form>
     
     <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>

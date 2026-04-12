@@ -6,21 +6,56 @@ header, .center, footer {
     min-height: 80px;
     border: 1px ;
 }
+aside a {
+    margin: 10px 0;
+    color: white;
+}
 
 header {
     background-color: white;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header_top {
     min-height: 20px;
     display: flex;
+    justify-content: flex-end;
+}
+
+
+.header_top {
+    min-height: 20px;
+    display: flex;
+ 
+}
+.header_date {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#DateLabel {
+    flex: 1;
+}
+
+#DayImage {
+    flex: 3;
+    max-width: 100px;
+    height: auto;
+}
+
+body {
+    border: 5px solid pink !important;
 }
 
 
 
 .main_nav {
-    background-color: deeppink;
+    background-color: peachpuff;
     min-height: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -70,6 +105,6 @@ aside {
     }
 
 footer {
-    background-color: lightpink;
+    background-color: peachpuff;
     color: white;
 }
