@@ -11,6 +11,24 @@ aside a {
     color: white;
 }
 
+h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+
+ul {
+    font-size: 20px; 
+    line-height: 1.8; 
+    list-style-position: inside; 
+}
+
+
+    ul li::marker {
+        font-size: 1.2em;
+        color: #AEC6CF;
+    }
 header {
     background-color: white;
     margin-bottom: 5px;
@@ -53,7 +71,6 @@ body {
 }
 
 
-
 .main_nav {
     background-color: peachpuff;
     min-height: 30px;
@@ -64,9 +81,10 @@ body {
     .main_nav a {
         text-decoration: none;
         font-size: 24px;
-        color: darkblue;
+        color: #AEC6CF;
         margin: 10px;
     }
+
 
 
 
