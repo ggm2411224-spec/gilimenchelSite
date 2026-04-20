@@ -12,15 +12,17 @@
 <body>
     
         <header>
-            		<section class="header_date">
-			<asp:Label ID="DateLabel" runat="server"></asp:Label>
-			<asp:Image ID="DayImage" runat="server"/>
-		</section>
+            
 
             <section class="header_top">  
-                    <img src="images/logo.png" alt="Teen Series" width="140" height="90" />
-<nav>
+                <section class="header_date">
+                    <asp:Label ID="DateLabel" runat="server"></asp:Label>
+                    <asp:Image ID="DayImage" runat="server"/>
                 </section>
+                    
+                <img src="images/logo.png" alt="Teen Series" width="140" height="90" />
+
+            </section>
             
             <nav class="main_nav"> 
                 

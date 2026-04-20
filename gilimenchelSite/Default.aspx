@@ -80,7 +80,7 @@
             font-weight: bold; 
             text-decoration: none; 
             z-index: 1000;
-            box-shadow: 0px 4px 15px rgba(174, 198, 207, 0.2); /* הילה עדינה מאוד */
+            box-shadow: 0px 4px 15px rgba(174, 198, 207, 0.2); 
            ">
            📢 לקבוצת הטלגרם - לחצו כאן
         </a>

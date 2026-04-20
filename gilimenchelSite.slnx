@@ -8,19 +8,19 @@
       <Property Name="Debug.AspNetCompiler.FixedNames" Value="&quot;false&quot;" />
       <Property Name="Debug.AspNetCompiler.ForceOverwrite" Value="&quot;true&quot;" />
       <Property Name="Debug.AspNetCompiler.PhysicalPath" Value="&quot;gilimenchelSite\&quot;" />
-      <Property Name="Debug.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_50351\&quot;" />
+      <Property Name="Debug.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_50353\&quot;" />
       <Property Name="Debug.AspNetCompiler.Updateable" Value="&quot;true&quot;" />
-      <Property Name="Debug.AspNetCompiler.VirtualPath" Value="&quot;/localhost_50351&quot;" />
+      <Property Name="Debug.AspNetCompiler.VirtualPath" Value="&quot;/localhost_50353&quot;" />
       <Property Name="DefaultWebSiteLanguage" Value="&quot;Visual C#&quot;" />
       <Property Name="Release.AspNetCompiler.Debug" Value="&quot;False&quot;" />
       <Property Name="Release.AspNetCompiler.FixedNames" Value="&quot;false&quot;" />
       <Property Name="Release.AspNetCompiler.ForceOverwrite" Value="&quot;true&quot;" />
       <Property Name="Release.AspNetCompiler.PhysicalPath" Value="&quot;gilimenchelSite\&quot;" />
-      <Property Name="Release.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_50351\&quot;" />
+      <Property Name="Release.AspNetCompiler.TargetPath" Value="&quot;PrecompiledWeb\localhost_50353\&quot;" />
       <Property Name="Release.AspNetCompiler.Updateable" Value="&quot;true&quot;" />
-      <Property Name="Release.AspNetCompiler.VirtualPath" Value="&quot;/localhost_50351&quot;" />
+      <Property Name="Release.AspNetCompiler.VirtualPath" Value="&quot;/localhost_50353&quot;" />
       <Property Name="TargetFrameworkMoniker" Value="&quot;.NETFramework,Version%3Dv4.7.2&quot;" />
-      <Property Name="VWDPort" Value="&quot;50351&quot;" />
+      <Property Name="VWDPort" Value="&quot;50353&quot;" />
     </Properties>
   </Project>
 </Solution>

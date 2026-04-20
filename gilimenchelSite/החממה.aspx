@@ -89,7 +89,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     
-    <h1>האי <span style="font-size: 0.6em; color: #FFFFFF;">2007-2010</span></h1>
+    <h1>החממה <span style="font-size: 0.6em; color: #FFFFFF;">2007-2010</span></h1>
     
     <p>
         החממה היא סדרת נוער מאת גיורא חמיצר שמספרת על אחים אלה-לי ואלפי שמגיעים לבית ספר למצוינות שבו אמא שלהם למדה בעקבות מותה בהתפוצצות המעבורת שלה בטיסה לחלל. בית הספר הוא פנמייה ומורכב מ2 קבוצות "העורבים" ו"הנשרים" ו2 הקבוצות מתחרות באתגרים קשים ומגבשים אחד נגד השני . הם פותרים תעלומות מגלים סודות ולומדים יותר על אימם ומה קרה לה.
@@ -98,20 +98,20 @@
     <h3>מדד הדירוג שלנו</h3>
     <ul class="rating-list">
         <li style="--rating: 5;">עלילה: 5 מתוך 5</li>
-        <li style="--rating: 4;">משחק: 4 מתוך 5</li>
-        <li style="--rating: 4.5;">דמויות: 4.5 מתוך 5</li>
+        <li style="--rating: 3.5;">משחק: 3.5 מתוך 5</li>
+        <li style="--rating: 3;">דמויות: 3 מתוך 5</li>
     </ul>
 
     <div class="summary-box">
         <p>לסיכום: סדרה עם עלילת נעורים מגבשת שגורמת למתח בכל פרק .</p>
-        <p><strong>הגבלת גיל מומלצת:</strong> 10+</p>
+        <p><strong>הגבלת גיל מומלצת:</strong> 11+</p>
         <p><strong>ציון כולל:</strong> 4.5  כוכבים ★ ניתן לצפות ב- בטלגרם או בYES .</p>
     </div>
 
-    <a href="https://youtu.be/17cOSXKHD3k?si=AlDlSpWBeZc4-KDn" 
+    <a href="https://youtu.be/a25DAtsIfQw?si=ORL4hqBgyrjCsUgk" 
        target="_blank" 
        style="color: #FFFFFF !important; border: 2px solid #AEC6CF; background-color: transparent; text-decoration: none; font-weight: bold; display: inline-block; padding: 10px 20px; border-radius: 8px; margin-top: 20px;">
-       🎬 לשיר הפתיחה של האי
+       🎬 לשיר הפתיחה של החממה 
     </a>
 
 </asp:Content>
