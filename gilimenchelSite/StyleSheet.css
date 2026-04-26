@@ -67,12 +67,12 @@ header {
 }
 
 body {
-    border: 5px solid pink !important;
+    border: 5px solid #AEC6Cb !important;
 }
 
 
 .main_nav {
-    background-color: peachpuff;
+    background-color: #AEC6CF;
     min-height: 30px;
     padding-left: 100px;
     padding-right: 100px;
@@ -89,7 +89,7 @@ body {
     .main_nav a {
         text-decoration: none;
         font-size: 24px;
-        color: #AEC6CF;
+        color: white;
         margin: 10px;
     }
 
@@ -97,18 +97,18 @@ body {
 
 
 .center {
-    background-color: pink;
+    background-color: #C08081;
     margin-bottom: 5px;
     display: flex;
 }
 
 main, aside {
     min-height: 400px;
-    background-color: pink;
+    background-color: #C08081;
 }
 
 main {
-    background-color: pink;
+    background-color: #C08081;
     flex: 4;
     color: white;
     padding: 3px 8px;
@@ -116,7 +116,7 @@ main {
 
 
 aside {
-    background-color: pink;
+    background-color: #C08081;
     flex: 1;
     padding: 3px;
     text-align: center;
@@ -131,6 +131,6 @@ aside {
     }
 
 footer {
-    background-color: peachpuff;
+    background-color: #AEC6CF;
     color: white;
 }

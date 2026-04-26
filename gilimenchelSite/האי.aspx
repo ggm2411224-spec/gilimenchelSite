@@ -1,122 +1,114 @@
 ﻿<%@ Page Title="האי" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="האי.aspx.cs" Inherits="האי" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style>
-       
-        h1 {
-            color: #AEC6CF;
-            font-size: 2.5em;
-            border-bottom: 2px solid #FFFFFF;
-            padding-bottom: 10px;
+    <style type="text/css">
+        /* עיצוב אחיד לכל האתר */
+        .page-container {
+            direction: rtl;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .main-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             margin-bottom: 20px;
         }
 
-       
-        p {
-            color: #FFFFFF;
-            line-height: 1.8;
-            font-size: 1.15em;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-
-        
-        h3 {
+        h1 {
             color: #AEC6CF;
-            margin-top: 25px;
-            text-decoration: underline rgba(174, 198, 207, 0.4);
-        }
-
-        .rating-list {
-            padding: 0;
-            margin: 20px 0;
-        }
-
-        .rating-list li {
-            list-style: none;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            color: #FFFFFF;
-            font-size: 1.1em;
-        }
-
-        .rating-list li::before {
-            content: '★★★★★';
-            font-size: 24px;
-          
-            background: linear-gradient(90deg, 
-                #AEC6CF calc(var(--rating) / 5 * 100%), 
-                rgba(255, 255, 255, 0.2) calc(var(--rating) / 5 * 100%));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            border-bottom: 3px solid #AEC6CF;
             display: inline-block;
-            letter-spacing: 3px;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
 
-       
-        .series-img {
-            border: 2px solid #AEC6CF;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(174, 198, 207, 0.2);
+        h2 {
+            color: #34495e;
+            font-size: 1.4rem;
+            margin-top: 25px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border-right: 4px solid #AEC6CF;
+            border-radius: 4px;
+        }
+
+        .sidebar-box {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .aside-img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 1px solid #ddd;
         }
 
-      
-        .summary-box {
-            border-right: 3px solid #AEC6CF;
-            padding-right: 15px;
-            margin: 20px 0;
-            font-style: italic;
+        .tele-btn {
+            display: inline-block;
+            background-color: #AEC6CF;
+            color: #fff !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
         }
     </style>
 </asp:Content>
 
 <asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
-    <div style="text-align: center; padding: 10px;">
-        <img src="images/האי.jpg" alt="האי" class="series-img" width="400" />
-        
-        <a href="https://t.me/king_of_telegram_b" target="_blank" 
-           style="position: fixed; bottom: 20px; left: 20px; background-color: transparent; color: #AEC6CF !important; border: 2px solid #AEC6CF; padding: 12px 25px; border-radius: 50px; font-weight: bold; text-decoration: none; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-           📢 לצפייה ב"האי" בטלגרם
-        </a>
+    <div class="sidebar-box">
+        <h3 style="color: #2c3e50;">האי</h3>
+        <img src="images/האי.jpg" alt="האי" class="aside-img" />
+        <br />
+        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 צפייה בטלגרם</a>
     </div>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
-    
-    <h1>האי <span style="font-size: 0.6em; color: #FFFFFF;">2007-2010</span></h1>
-    
-    <p>
-        "האי" היא סדרת מדע-בדיוני ישראלית פורצת דרך שנוצרה על ידי גיורא חמיצר. 
-        העלילה מתחילה בבית מחסה לילדים בעלי עבר פלילי, אך מהר מאוד הופכת למסע הישרדות פנטסטי. 
-        במרכז הסיפור עומד טומי, שמגלה כי עליו לממש נבואה עתיקה ולהפוך ל"דילן" – האדם היחיד שיכול למנוע מאסטרואיד להחריב את כדור הארץ ב-9.9.2009.
-        כשהניסיון נכשל והעולם נחרב, החבורה מוצאת את עצמה על אי מסתורי שבו חוקי הזמן והפיזיקה עובדים אחרת.
-    </p>
+    <div class="page-container">
+        <div class="main-card">
+            <h1>האי <span style="font-size: 0.6em; color: #777;">2007-2010</span></h1>
+            
+            <p>
+                "האי" היא סדרת מדע-בדיוני ישראלית פורצת דרך שנוצרה על ידי גיורא חמיצר. 
+                העלילה מתחילה בבית מחסה לילדים בעלי עבר פלילי, אך מהר מאוד הופכת למסע הישרדות פנטסטי. 
+                במרכז הסיפור עומד טומי, שמגלה כי עליו לממש נבואה עתיקה ולהפוך ל"דילן" – האדם היחיד שיכול למנוע מאסטרואיד להחריב את כדור הארץ.
+            </p>
 
-    <h3>מדד הדירוג שלנו</h3>
-    <ul class="rating-list">
-        <li style="--rating: 5;">עלילה: 5 מתוך 5</li>
-        <li style="--rating: 4;">משחק: 4 מתוך 5</li>
-        <li style="--rating: 4.5;">דמויות: 4.5 מתוך 5</li>
-    </ul>
+            <h2>מדד הדירוג שלנו</h2>
+            <ul class="feature-list">
+                <li>עלילה: ★★★★★ (5 מתוך 5)</li>
+                <li>משחק: ★★★★☆ (4 מתוך 5)</li>
+                <li>דמויות: ★★★★☆ (4.5 מתוך 5)</li>
+            </ul>
 
-    <div class="summary-box">
-        <p>לסיכום: סדרה עם עלילה מורכבת ומרתקת שמתאימה למי שאוהב תעלומות ומסע בזמן.</p>
-        <p><strong>הגבלת גיל מומלצת:</strong> 10+</p>
-        <p><strong>ציון כולל:</strong> 4.5 כוכבים ★ ניתן לצפות ב-HOT, באפליקציית BIGI או בטלגרם.</p>
+            <h2>פרטים וסיכום</h2>
+            <ul class="feature-list">
+                <li><b>סיכום:</b> סדרה מורכבת ומרתקת לחובבי תעלומות ומסע בזמן.</li>
+                <li><b>הגבלת גיל:</b> 10+</li>
+                <li><b>איפה לצפות:</b> HOT, BIGI או טלגרם</li>
+            </ul>
+
+            <br />
+            <a href="https://youtu.be/17cOSXKHD3k" target="_blank" style="color: #AEC6CF; font-weight: bold; text-decoration: underline;">🎬 לצפייה בשיר הפתיחה של האי</a>
+        </div>
     </div>
-
-    <a href="https://youtu.be/17cOSXKHD3k?si=AlDlSpWBeZc4-KDn" 
-       target="_blank" 
-       style="color: #FFFFFF !important; border: 2px solid #AEC6CF; background-color: transparent; text-decoration: none; font-weight: bold; display: inline-block; padding: 10px 20px; border-radius: 8px; margin-top: 20px;">
-       🎬 לשיר הפתיחה של האי
-    </a>
-
 </asp:Content>
-
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
-</asp:Content>
-

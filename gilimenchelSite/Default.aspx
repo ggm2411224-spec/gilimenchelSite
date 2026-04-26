@@ -2,11 +2,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-        /* עיצוב כללי נקי */
+        
         .page-container {
             direction: rtl;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+            color: #333; /* שיניתי לשחור-אפור כדי שתוכלי לקרוא את הטקסט בקלות */
             line-height: 1.6;
         }
 
@@ -19,8 +19,8 @@
         }
 
         h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #4a90e2;
+            color: #AEC6CF; /* הצבע החדש שלך */
+            border-bottom: 3px solid #AEC6CF; /* החלפתי מכחול לצבע שלך */
             display: inline-block;
             padding-bottom: 5px;
             margin-bottom: 20px;
@@ -42,7 +42,7 @@
             padding: 10px 15px;
             margin-bottom: 8px;
             background: #f8f9fa;
-            border-right: 4px solid #4a90e2;
+            border-right: 4px solid #AEC6CF; /* החלפתי מכחול לצבע שלך */
             border-radius: 4px;
         }
 
@@ -65,7 +65,7 @@
 
         .tele-btn {
             display: inline-block;
-            background-color: #0088cc;
+            background-color: #AEC6CF; /* הצבע החדש שלך */
             color: #fff !important;
             padding: 12px 25px;
             text-decoration: none;
@@ -75,7 +75,7 @@
         }
 
         .tele-btn:hover {
-            background-color: #006699;
+            background-color: #95adb5; /* גרסה טיפה יותר כהה בשביל הריחוף */
         }
     </style>
 </asp:Content>
