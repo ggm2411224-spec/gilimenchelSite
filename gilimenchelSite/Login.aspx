@@ -15,6 +15,12 @@
     <input type="submit" value="Submit">
 </form>
 <div runat="server" id="LoginResult"></div>
+
+    <br><br>
+<form method="get" action="Registration.aspx">		
+    <input type="submit" value="להרשמה"/>
+</form>
+
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">

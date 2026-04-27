@@ -30,10 +30,10 @@
                 <a href="אליפים.aspx">אליפים</a>
                 <a href="האי.aspx">האי</a>
                <a href="החממה.aspx">החממה</a>
-                <a href="השמינייה.aspx">השמינייה</a>
+                <a href="השמיניה.aspx">השמיניה</a>
                 <a href="גאליס.aspx">גאליס</a>
                 <a href="חצויה.aspx">חצויה</a>
-                                <a href="הילדים מגבעת נפוליון.aspx">הילדים מגבעת נפוליון</a>
+                                <a href="הילדים מגבעת נפוליאון.aspx">הילדים מגבעת נפוליון</a>
                 <a class="login_logout" ID="LoginLogout" runat="server"></a>	
             </nav>
         </header>
