@@ -126,7 +126,37 @@ public partial class Registration : System.Web.UI.Page
         // ולהחזיר:
         // return false;
 
-       
+        string vv = idNum.Value;
+
+        if (vv.Length == 9)
+        {
+            RegistrationResult.InnerText += ".,תעודת הזהות חייבת להכיל 9 מספרים ";
+            return false;
+     
+        }
+
+        bool letterExist = false;
+        bool numberExist = false;
+        for (int i = 0; i < vv.Length; i++)
+        {
+            // בדיקת קיום אותיות
+            if (vv[i] >= 'a' && vv[i] <= 'z' || vv[i] >= 'A' && vv[i] <= 'Z')
+                letterExist = false;
+            // בדיקת קיום מספרים
+            else if (vv[i] >= '0' && vv[i] <= '9')
+                numberExist = true;
+        }
+
+
+
+
+        if (!letterExist || !numberExist)
+        {
+            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל מספרים. ";
+            return false;
+        }
+
+     
 
         return true;
     }
@@ -141,21 +171,45 @@ public partial class Registration : System.Web.UI.Page
         // RegistrationResult.InnerText
         // וסיים את הפעולה עם:
         // return false;
+        string vx = phone.Value;
+
+        if (vx.Length == 9)
+        {
+            RegistrationResult.InnerText += ".,מספר הטלפון חייב להכיל 10 מספרים ";
+            return false;
+
+        }
+
+        bool Firstletter = false;
+        
+        
+            // בדיקת קיום אותיות
+            if (vx[1] != '0' )
+        {
+            Firstletter = false;
+
+        }
+                
+           
+        
 
         return true;
     }
 
     private bool Email_Validation()
     {
-        // === משימה לתלמיד: וידוא כתובת אימייל בסיסית ===
-        // ודא שהתנאים הבאים מתקיימים:
-        // 1. המחרוזת מכילה את התו שטרודל
-        // 2. המחרוזת מכילה את התו נקודה
-        // 3. הנקודה מופיעה אחרי השטרודל
-        // רמז: כדי למצוא את המיקום של התווים, חפש ברשת איך להשתמש בפעולה:
-        // IndexOf
-        // במקרה שאחד התנאים לא מתקיים, הוסף הודעת שגיאה מתאימה והחזר:
-        // return false;
+      string hh = mail.Value;
+
+       
+           bool MailExist = false;
+
+        for (int i = 0; i < hh.Length; i++)
+        {
+            // בדיקת קיום אותיות
+            if (hh[i] == '@'  || hh[i] == '.')
+                MailExist = true;
+         
+        }
 
         return true;
     }

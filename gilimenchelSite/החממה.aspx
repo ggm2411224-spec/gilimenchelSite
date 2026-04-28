@@ -81,8 +81,8 @@
 <asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
     <div class="sidebar-box">
         <h3 style="color: #2c3e50;">החממה</h3>
-        <img src="https://share.google/UYMOJ5xren8LXwH8r" alt="החממה" class="aside-img" />
-        <br />
+        <img src="images/החממה.jfif" alt="החממה" class="aside-img" />
+ <br />
         <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 צפייה בטלגרם</a>
     </div>
 </asp:Content>
