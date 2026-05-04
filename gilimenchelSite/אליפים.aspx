@@ -107,7 +107,7 @@
             </ul>
 
             <br />
-            <a href="https://youtu.be/gBx1pNfnv_w" target="_blank" style="color: #AEC6CF; font-weight: bold;">🎬 לצפייה בשיר הפתיחה ביוטיוב</a>
+            <a href="https://youtu.be/gBx1pNfnv_w" target="_blank" style="color: #AEC6CF; font-weight: bold;">🎬 לצפייה בשיר הפתיחה של אליפים</a>
         </div>
     </div>
 </asp:Content>

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 public partial class Registration : System.Web.UI.Page
 {
@@ -114,50 +116,30 @@ public partial class Registration : System.Web.UI.Page
         return true;
     }
 
+
     private bool ID_Validation()
     {
-        // === משימה לתלמיד: וידוא תעודת זהות ===
-        // 1. ודא שאורך תעודת הזהות הוא בדיוק 9 תווים
-        // 2. ודא שכל התווים במחרוזת הם ספרות בלבד
-        // כדי לעבור על כל התווים, תוכל להיעזר בלולאה שמופיעה בפעולה:
-        // Password_Validation
-        // 3. אם יש שגיאה, אל תשכח להוסיף הודעה אל:
-        // RegistrationResult.InnerText
-        // ולהחזיר:
-        // return false;
-
         string vv = idNum.Value;
 
-        if (vv.Length == 9)
+        
+        if (vv.Length != 9)
         {
-            RegistrationResult.InnerText += ".,תעודת הזהות חייבת להכיל 9 מספרים ";
+            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל בדיוק 9 ספרות. ";
             return false;
-     
         }
 
-        bool letterExist = false;
-        bool numberExist = false;
+      
         for (int i = 0; i < vv.Length; i++)
         {
-            // בדיקת קיום אותיות
-            if (vv[i] >= 'a' && vv[i] <= 'z' || vv[i] >= 'A' && vv[i] <= 'Z')
-                letterExist = false;
-            // בדיקת קיום מספרים
-            else if (vv[i] >= '0' && vv[i] <= '9')
-                numberExist = true;
+        
+            if (vv[i] < '0' || vv[i] > '9')
+            {
+                RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל ספרות בלבד. ";
+                return false;
+            }
         }
 
-
-
-
-        if (!letterExist || !numberExist)
-        {
-            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל מספרים. ";
-            return false;
-        }
-
-     
-
+      
         return true;
     }
 
@@ -227,8 +209,32 @@ public partial class Registration : System.Web.UI.Page
 
     private bool Insert_Into_Database()
     {
+        string dbPath = this.MapPath("App_Data/Database.mdf");
+        DAL dal = new DAL(dbPath);
+
+        string sqlQuery = "SELECT * FROM Users WHERE user_name = '" + userName.Value + "'";
+        DataTable dt = dal.GetDataTable(sqlQuery);
+
+        if (dt.Rows.Count > 0)
+        {
+            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            return false;
+        }
+
+        sqlQuery = "INSERT INTO Users VALUES (" +
+        "'" + firstName.Value + "', " +
+        "'" + lastName.Value + "', " +
+        "'" + userName.Value + "', " +
+        "'" + pswd.Value + "', " +
+        "'" + idNum.Value + "'," +
+        "'" + phone.Value + "'," +
+        "'" + mail.Value + "'," +
+        "'" + Request.Form["gender"] + "'," +
+        "'" + DateTime.Now.ToString("yyyy-MM-dd") + "', 0);";
+
+        dal.UpdateDB(sqlQuery);
+
         return true;
     }
-
 
 }
