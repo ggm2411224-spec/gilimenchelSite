@@ -134,3 +134,11 @@ footer {
     background-color: #AEC6CF;
     color: white;
 }
+
+.adminTable tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.adminTable, .adminTable th, .adminTable td {
+    border: 1px solid black;
+}
