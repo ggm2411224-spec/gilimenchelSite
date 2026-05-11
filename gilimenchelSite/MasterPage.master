@@ -22,134 +22,138 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            padding: 25px 0;
+            padding: 10px 0; /* הקטנתי את הגובה של הכל */
             box-shadow: 0 4px 20px rgba(174, 198, 207, 0.2);
             border-bottom: 1px solid rgba(174, 198, 207, 0.3);
         }
 
-        .header-content {
-            max-width: 1200px;
+        .header-container {
+            max-width: 1300px;
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .header_top {
-            width: 90%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
+            padding: 0 30px;
         }
 
+        /* לוגו בגודל אסתטי */
         .main-logo {
-            width: 220px; /* לוגו גדול ומרשים */
+            width: 120px;
             height: auto;
+            flex-shrink: 0;
         }
 
-        .date-box {
-            color: #AEC6CF;
-            font-weight: 700;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
+        /* תפריט ניווט - קומפקטי ועדין */
         .main_nav {
             display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
+            gap: 5px; /* רווח קטן בין הכפתורים */
             justify-content: center;
+            flex: 2; /* נותן לו שטח מרכזי אבל לא נמתח מדי */
         }
 
         .main_nav a {
             text-decoration: none;
             color: #6a7f8a;
             font-weight: 600;
-            padding: 10px 22px;
+            padding: 6px 14px; /* הקטנתי את הריווח הפנימי */
             border-radius: 50px;
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem; /* גופן קטן ואסתטי יותר */
             transition: all 0.3s ease;
-            font-size: 1.05rem;
+            white-space: nowrap;
         }
 
         .main_nav a:hover {
             background: #fff;
             color: #AEC6CF;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(174, 198, 207, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(174, 198, 207, 0.2);
         }
 
+        /* כפתור Login/Logout עדין */
+        .login_logout {
+            text-decoration: none;
+            color: #AEC6CF !important;
+            font-weight: 700;
+            padding: 6px 16px;
+            border: 2px solid #AEC6CF;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .login_logout:hover {
+            background: #AEC6CF;
+            color: white !important;
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .date-box {
+            color: #AEC6CF;
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* פריסה כללית */
         .page-wrapper {
-            max-width: 1100px;
-            margin: 40px auto;
+            max-width: 1000px;
+            margin: 30px auto;
             padding: 0 20px;
-            animation: fadeIn 0.8s ease;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* שטח ה-Main - מוודא שכל מה שבתוכו יכול להתמרכז */
         main {
             display: flex;
             flex-direction: column;
-            align-items: center; /* ממרכז את כל התוכן של ה-Main */
+            align-items: center;
             width: 100%;
         }
 
         .aside-card {
             background: white;
-            padding: 20px 30px;
-            border-radius: 20px;
+            padding: 15px 25px;
+            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.03);
             border: 1px solid #f0f0f0;
-            margin-bottom: 30px;
-            width: 100%; /* שיתפוס את כל הרוחב המוקצה */
-            box-sizing: border-box;
+            margin-bottom: 20px;
+            width: 100%;
         }
 
-        /* תיקון סופי למרכוז התמונה */
+        /* מרכוז תמונות */
         .aside-img, .series-img, main img {
-            max-width: 85%;
-            max-height: 500px;
-            object-fit: contain;
+            max-width: 80%;
+            max-height: 450px;
             display: block;
-            margin: 25px auto !important; /* ה-important מבטל הגדרות אחרות שדוחפות לצד */
-            border-radius: 24px;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-            border: 6px solid white;
+            margin: 20px auto !important;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 5px solid white;
         }
 
         footer {
             text-align: center;
-            padding: 60px 0;
+            padding: 40px 0;
             color: #b0bec5;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
         }
     </style>
     <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="header_top">
-                <div class="date-box">
-                    <asp:Label ID="DateLabel" runat="server"></asp:Label>
-                    <asp:Image ID="DayImage" runat="server" width="45" />
-                </div>
-                
-                <img src="images/logo.png" alt="Logo" class="main-logo" />
-
-                <div class="user-box">
-                    <a class="login_logout" ID="LoginLogout" runat="server" style="text-decoration:none; color:#AEC6CF; font-weight:bold; font-size: 1.1rem;"></a>
-                </div>
-            </div>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo" class="main-logo" />
 
             <nav class="main_nav"> 
                 <a href="Default.aspx">דף בית</a>
@@ -159,8 +163,16 @@
                 <a href="השמיניה.aspx">השמיניה</a>
                 <a href="גאליס.aspx" id="Galis" runat ="server">גאליס</a>
                 <a href="חצויה.aspx">חצויה</a>
-                <a href="הילדים מגבעת נפוליאון.aspx">הילדים מגבעת נפוליאון</a>
+                <a href="הילדים מגבעת נפוליאון.aspx">הילדים מגבעת</a>
             </nav>
+
+            <div class="info-section">
+                <div class="date-box">
+                    <asp:Label ID="DateLabel" runat="server"></asp:Label>
+                    <asp:Image ID="DayImage" runat="server" width="25" />
+                </div>
+                <a class="login_logout" ID="LoginLogout" runat="server"></a>
+            </div>
         </div>
     </header>
 
@@ -168,7 +180,7 @@
         <section class="top-aside">
             <div class="aside-card">
                 <asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
-                    <h3 style="color: #AEC6CF; margin: 0; font-size: 1.3rem;">✨ ברוכים הבאים לעולם הנוסטלגיה</h3>
+                    <h3 style="color: #AEC6CF; margin: 0; font-size: 1rem;">✨ עולם הנוסטלגיה</h3>
                 </asp:ContentPlaceHolder>
             </div>
         </section>
@@ -180,7 +192,7 @@
     </div>
 
     <footer>
-        <p>נבנה באהבה עבור חובבי סדרות הנוער | &copy; <%= DateTime.Now.Year %></p>
+        <p>&copy; <%= DateTime.Now.Year %> אתר סדרות הנוער</p>
     </footer>
 
     <asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server"></asp:ContentPlaceHolder>
