@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-        /* עיצוב אחיד לכל האתר */
+      
         .page-container {
             direction: rtl;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -104,9 +104,8 @@
                 <li>דמויות: ★★★☆☆ (3 מתוך 5)</li>
             </ul>
 
-            <h2>פרטים וסיכום</h2>
+            <h2>מידע נוסף</h2>
             <ul class="feature-list">
-                <li><b>סיכום:</b> סדרה עם עלילת נעורים מגבשת שגורמת למתח בכל פרק.</li>
                 <li><b>הגבלת גיל:</b> 11+</li>
                 <li><b>איפה לצפות:</b> YES או טלגרם</li>
             </ul>

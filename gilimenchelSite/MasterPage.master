@@ -163,7 +163,7 @@
                 <a href="השמיניה.aspx">השמיניה</a>
                 <a href="גאליס.aspx" id="Galis" runat ="server">גאליס</a>
                 <a href="חצויה.aspx">חצויה</a>
-                <a href="הילדים מגבעת נפוליאון.aspx">הילדים מגבעת</a>
+                <a href="הילדים מגבעת נפוליאון.aspx">הילדים מגבעת נפוליאון</a>
             </nav>
 
             <div class="info-section">
