@@ -85,7 +85,7 @@
         <h3 style="color: #2c3e50;">מקורות לצפייה</h3>
         <img src="images/hh.png" alt="סדרות נוער" class="aside-img" />
         <br />
-        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 הצטרפו לטלגרם</a>
+        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 לקבוצת הסדרות בטלגרם</a>
     </div>
 </asp:Content>
 
@@ -97,8 +97,8 @@
             
             <h2>מה תמצאו אצלנו?</h2>
             <ul class="feature-list">
-                <li>עלילה מעניינת וסוחפת</li>
-                <li>דמויות מרתקות</li>
+                <li>המלצות לסדרות איכותיות </li>
+                <li>פירוט עלילה ותקציר </li>
             </ul>
 
             <h2>בנוסף באתר יהיה:</h2>

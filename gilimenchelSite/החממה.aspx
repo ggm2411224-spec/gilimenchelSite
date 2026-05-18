@@ -83,7 +83,7 @@
         <h3 style="color: #2c3e50;">החממה</h3>
         <img src="images/החממה.jfif" alt="החממה" class="aside-img" />
  <br />
-        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 צפייה בטלגרם</a>
+        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 לקבוצת הסדרות בטלגרם</a>
     </div>
 </asp:Content>
 
@@ -106,8 +106,8 @@
 
             <h2>מידע נוסף</h2>
             <ul class="feature-list">
-                <li><b>הגבלת גיל:</b> 11+</li>
-                <li><b>איפה לצפות:</b> YES או טלגרם</li>
+                <li><b>  הגבלת גיל מומצלת:</b> 11+</li>
+                <li><b>איפה לצפות:</b> YES , טלגרם</li>
             </ul>
 
             <br />

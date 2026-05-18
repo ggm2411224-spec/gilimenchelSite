@@ -78,7 +78,7 @@
         <h3 style="color: #2c3e50;">האי</h3>
         <img src="images/האי.jpg" alt="האי" class="aside-img" />
         <br />
-        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 צפייה בטלגרם</a>
+        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 לקבוצת הסדרות בטלגרם</a>
     </div>
 </asp:Content>
 
@@ -100,11 +100,10 @@
                 <li>דמויות: ★★★★☆ (4.5 מתוך 5)</li>
             </ul>
 
-            <h2>פרטים וסיכום</h2>
+           <h2>מידע נוסף</h2>
             <ul class="feature-list">
-                <li><b>סיכום:</b> סדרה מורכבת ומרתקת לחובבי תעלומות ומסע בזמן.</li>
-                <li><b>הגבלת גיל:</b> 10+</li>
-                <li><b>איפה לצפות:</b> HOT, BIGI או טלגרם</li>
+                <li><b>  הגבלת גיל מומצלת:</b> 10+</li>
+                <li><b>איפה לצפות:</b> HOT, BIGI , טלגרם</li>
             </ul>
 
             <br />

@@ -77,7 +77,7 @@
         <h3 style="color: #2c3e50;">השמיניה</h3>
         <img src="images/השמיניה.png" alt="השמיניה" class="aside-img" />
         <br />
-        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 צפייה בטלגרם</a>
+        <a href="https://t.me/king_of_telegram_b" target="_blank" class="tele-btn">📢 לקבוצת הסדרות בטלגרם</a>
     </div>
 </asp:Content>
 
@@ -100,7 +100,7 @@
             <h2>מידע נוסף</h2>
             <ul class="feature-list">
                 <li>הגבלת גיל מומלצת: 9+</li>
-                <li>איפה ניתן לצפות :ברשת בהוט ובטלגרם </li>
+                <li>איפה ניתן לצפות :HOT, BIGI ,טלגרם </li>
             </ul>
 
             <br />
