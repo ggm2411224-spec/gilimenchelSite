@@ -5,7 +5,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
 
 public partial class Registration : System.Web.UI.Page
 {
@@ -64,8 +63,6 @@ public partial class Registration : System.Web.UI.Page
 
     private bool User_Name_Validation()
     {
-
-
         string uname = userName.Value;
 
         if (uname.Length < 3 || uname.Length > 8)
@@ -116,22 +113,18 @@ public partial class Registration : System.Web.UI.Page
         return true;
     }
 
-
     private bool ID_Validation()
     {
         string vv = idNum.Value;
 
-        
         if (vv.Length != 9)
         {
             RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל בדיוק 9 ספרות. ";
             return false;
         }
 
-      
         for (int i = 0; i < vv.Length; i++)
         {
-        
             if (vv[i] < '0' || vv[i] > '9')
             {
                 RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל ספרות בלבד. ";
@@ -139,58 +132,65 @@ public partial class Registration : System.Web.UI.Page
             }
         }
 
-      
         return true;
     }
 
     private bool Phone_Validation()
     {
-        // === משימה לתלמיד: וידוא מספר טלפון ===
-        // 1. ודא שאורך מספר הטלפון הוא בדיוק 10 תווים
-        // 2. ודא שהתו הראשון במספר הוא הספרה אפס
-        // 3. ודא שכל התווים במחרוזת הם ספרות בלבד
-        // 4. במקרה שאחד מהתנאים לא מתקיים, עדכן את:
-        // RegistrationResult.InnerText
-        // וסיים את הפעולה עם:
-        // return false;
         string vx = phone.Value;
 
-        if (vx.Length == 9)
+        // 1. ודא שאורך מספר הטלפון הוא בדיוק 10 תווים
+        if (vx.Length != 10)
         {
-            RegistrationResult.InnerText += ".,מספר הטלפון חייב להכיל 10 מספרים ";
+            RegistrationResult.InnerText += "מספר הטלפון חייב להכיל בדיוק 10 ספרות. ";
             return false;
-
         }
 
-        bool Firstletter = false;
-        
-        
-            // בדיקת קיום אותיות
-            if (vx[1] != '0' )
+        // 2. ודא שהתו הראשון במספר הוא הספרה אפס
+        if (vx[0] != '0')
         {
-            Firstletter = false;
-
+            RegistrationResult.InnerText += "מספר הטלפון חייב להתחיל בספרה 0. ";
+            return false;
         }
-                
-           
-        
+
+        // 3. ודא שכל התווים במחרוזת הם ספרות בלבד
+        for (int i = 0; i < vx.Length; i++)
+        {
+            if (vx[i] < '0' || vx[i] > '9')
+            {
+                RegistrationResult.InnerText += "מספר הטלפון חייב להכיל ספרות בלבד. ";
+                return false;
+            }
+        }
 
         return true;
     }
 
     private bool Email_Validation()
     {
-      string hh = mail.Value;
+        string hh = mail.Value;
 
-       
-           bool MailExist = false;
+        int atIndex = -1;
+        int dotIndex = -1;
 
+        // לולאה שמוצאת את המיקומים של השטרודל והנקודה האחרונה
         for (int i = 0; i < hh.Length; i++)
         {
-            // בדיקת קיום אותיות
-            if (hh[i] == '@'  || hh[i] == '.')
-                MailExist = true;
-         
+            if (hh[i] == '@')
+            {
+                atIndex = i;
+            }
+            if (hh[i] == '.')
+            {
+                dotIndex = i;
+            }
+        }
+
+        // בדיקה ששני התווים קיימים, שהשטרודל מופיע לפני הנקודה, ושאינם בקצוות
+        if (atIndex == -1 || dotIndex == -1 || atIndex > dotIndex || atIndex == 0 || dotIndex == hh.Length - 1)
+        {
+            RegistrationResult.InnerText += "כתובת האימייל אינה תקינה. ";
+            return false;
         }
 
         return true;
@@ -236,5 +236,4 @@ public partial class Registration : System.Web.UI.Page
 
         return true;
     }
-
 }
